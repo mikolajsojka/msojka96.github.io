@@ -23,6 +23,7 @@ body #navigation .button {
   width: 150px;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 body #navigation .button:hover {
   background-color: white;
