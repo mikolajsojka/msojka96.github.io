@@ -10,9 +10,11 @@ document.onreadystatechange = function () {
 
         text = document.querySelectorAll(".text");
         button = document.querySelectorAll(".button");
+        button_first = document.querySelector("#description");
 
         Hide(text);
-        document.querySelector("#description").hidden=false;
+        button_first.hidden=false;
+
     }
 
 Search = ((name) => {
