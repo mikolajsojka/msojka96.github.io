@@ -25,6 +25,15 @@ body #navigation .button {
   justify-content: center;
   cursor: pointer;
 }
+body #navigation .button:nth-child(1) {
+  background: #bdbcbc;
+}
+body #navigation .button:nth-child(2) {
+  background: #9b9b9b;
+}
+body #navigation .button:nth-child(3) {
+  background: #7e7e7e;
+}
 body #navigation .button:hover {
   background-color: white;
 }
@@ -39,5 +48,5 @@ body #footer {
   left: 0;
   bottom: 0;
   text-align: center;
-  color: white;
+  color: #cecccc;
 }
