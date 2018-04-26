@@ -31,6 +31,15 @@ body #navigation .button:hover {
 body #navigation .active {
   background-color: white;
 }
+body #text #description #test {
+  display: flex;
+  flex-direction: row;
+}
+body #text #description #test img {
+  margin-right: 50px;
+  width: 200px;
+  height: 200px;
+}
 body #text .text {
   padding: 50px;
 }
