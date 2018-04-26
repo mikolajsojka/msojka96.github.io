@@ -30,6 +30,9 @@ body #navigation .button:hover {
 body #navigation .active {
   background-color: white;
 }
+body #text {
+  padding: 1%;
+}
 body #text #description #test {
   display: flex;
   flex-direction: row;
@@ -42,7 +45,8 @@ body #text .text {
     width: 100%;
   }
   body body #text {
-    width: 99%;
+    width: 100%;
+    padding: 1%;
   }
   body body #text #description #test {
     display: flex;
