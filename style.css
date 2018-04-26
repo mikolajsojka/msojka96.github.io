@@ -6,7 +6,7 @@ body {
   min-width: 100vh;
 }
 body #navigation {
-  max-width: 100%;
+  min-width: 90%;
   position: relative;
   display: flex;
   background-color: #1b1b1b;
