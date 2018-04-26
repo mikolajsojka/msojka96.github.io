@@ -42,7 +42,7 @@ body #text .text {
     width: 100%;
   }
   body body #text {
-    width: 100%;
+    width: 99%;
   }
   body body #text #description #test {
     display: flex;
