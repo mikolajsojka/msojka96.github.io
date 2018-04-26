@@ -6,7 +6,6 @@ body {
   min-width: 100vh;
 }
 body #navigation {
-  min-width: 90%;
   position: relative;
   display: flex;
   background-color: #1b1b1b;
@@ -44,6 +43,20 @@ body #text #description #test img {
 }
 body #text .text {
   padding: 50px;
+}
+@media only screen and (max-width: 600px) {
+  body #text #description #test {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+  }
+  body #text #description #test img {
+    position: relative;
+    margin: 0 auto;
+  }
+  body #text .text {
+    padding: 50px;
+  }
 }
 body #footer {
   border-top: 1px solid black;
