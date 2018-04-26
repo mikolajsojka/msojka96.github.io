@@ -9,7 +9,7 @@ body #navigation {
   position: relative;
   display: flex;
   background-color: #1b1b1b;
-  padding: 50px;
+  padding: 4%;
   flex-direction: row;
   margin: 0;
 }
@@ -19,7 +19,7 @@ body #navigation .button {
   border: 3px solid #e7e6e6;
   background-color: #616161;
   border-radius: 5px;
-  margin-right: 20px;
+  margin-right: 1%;
   height: 50px;
   width: 150px;
   align-items: center;
@@ -36,13 +36,8 @@ body #text #description #test {
   display: flex;
   flex-direction: row;
 }
-body #text #description #test img {
-  margin-right: 50px;
-  min-width: 200px;
-  height: 200px;
-}
 body #text .text {
-  padding: 50px;
+  padding: 4%;
 }
 @media only screen and (max-width: 600px) {
   body body {
@@ -53,12 +48,8 @@ body #text .text {
     flex-direction: column;
     text-align: justify;
   }
-  body body #text #description #test img {
-    position: relative;
-    margin: 0 auto;
-  }
   body body #text .text {
-    padding: 50px;
+    padding: 4%;
   }
 }
 body #footer {
