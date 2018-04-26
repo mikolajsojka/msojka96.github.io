@@ -37,12 +37,18 @@ body #text #description #test {
   display: flex;
   flex-direction: row;
 }
+body #text #description #test #description_text {
+  padding-left: 4%;
+}
 body #text .text {
   padding: 4%;
 }
 @media only screen and (max-width: 600px) {
   body body {
     width: 100%;
+  }
+  body body #navigation {
+    margin: 0 auto;
   }
   body body #text {
     width: 100%;
@@ -51,7 +57,9 @@ body #text .text {
   body body #text #description #test {
     display: flex;
     flex-direction: column;
-    text-align: justify;
+  }
+  body body #text #description #test #description_text {
+    padding-left: 4%;
   }
   body body #text .text {
     padding: 4%;

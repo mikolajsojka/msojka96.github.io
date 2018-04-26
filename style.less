@@ -44,6 +44,14 @@ body {
         display:flex;
         flex-direction:row;
 
+        img{
+            
+        }
+
+        #description_text{
+            padding-left:4%;
+        }
+
     }
   }
     .text {
@@ -54,24 +62,33 @@ body {
   @media only screen and (max-width: 600px) {
     body{
       width:100%;
-    #text {
-      width:100%;
-      padding:1%;
-      #description{
-        #test{
-          display:flex;
-          flex-direction:column;
-         
-          text-align:justify;
-  
+      #navigation {
+        margin:0 auto;
       }
-    }
-      .text {
-        padding:4%;
+      #text {
+        width:100%;
+        padding:1%;
+        #description{
+          #test{
+            display:flex;
+            flex-direction:column;
+    
+            img{
+                
+            }
+    
+            #description_text{
+                padding-left:4%;
+            }
+    
+        }
       }
-    }
-  }
+        .text {
+          padding: 4%;
+        }
+      }
 }
+  }
 
   #footer {
     border-top: 1px solid black;
