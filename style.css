@@ -41,7 +41,7 @@ body #text .text {
 }
 @media only screen and (max-width: 600px) {
   body body {
-    width: 100%;
+    width: 100vh;
   }
   body body #text #description #test {
     display: flex;
