@@ -45,16 +45,19 @@ body #text .text {
   padding: 50px;
 }
 @media only screen and (max-width: 600px) {
-  body #text #description #test {
+  body body {
+    width: 100%;
+  }
+  body body #text #description #test {
     display: flex;
     flex-direction: column;
     text-align: justify;
   }
-  body #text #description #test img {
+  body body #text #description #test img {
     position: relative;
     margin: 0 auto;
   }
-  body #text .text {
+  body body #text .text {
     padding: 50px;
   }
 }
