@@ -1,60 +1,59 @@
-body{
-    display:flex;
-    flex-direction: column;
-    margin:0;
-    min-height:100vh;
-    
-    
-    #navigation{
-        position:relative;
-        display:flex;
-        background-color:rgb(27, 27, 27);
-        padding:50px;
-        flex-direction: row;
-        margin:0;
-        
-        
-        .button{
-            display:flex;
-            position:relative;
-            border: 3px solid rgb(231, 230, 230);
-            background-color:rgb(173, 173, 173);
-            border-radius: 25px;
-            margin-right:20px;
-            
-            height:50px;
-            width:150px;
-            align-items:center;
-            justify-content: center;
-            cursor:pointer;
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
 
-            
-        }
+  #navigation {
+    position: relative;
+    display: flex;
+    background-color: rgb(27, 27, 27);
+    padding: 50px;
+    flex-direction: row;
+    margin: 0;
 
-        .button:hover{
-            background-color: white;
-        }
+    .button {
+      display: flex;
+      position: relative;
+      border: 3px solid rgb(231, 230, 230);
+      background-color: rgb(173, 173, 173);
+      border-radius: 25px;
+      margin-right: 20px;
+
+      height: 50px;
+      width: 150px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
 
     }
 
-    #text{
-    
-        .text{
-            padding:50px;
-        }
+    .button:hover {
+      background-color: white;
     }
 
+    .active {
+      background-color: white;
+    }
 
-    #footer{           
-        border-top:1px solid black;
-        position: fixed;
-        width:100%;
-        background-color: rgb(27, 27, 27);
-        left:0;
-        bottom:0;
-        text-align:center;
-        color:rgb(206, 204, 204);
-        
-        
-    }    
+  }
+
+  #text {
+
+    .text {
+      padding: 50px;
+    }
+  }
+
+  #footer {
+    border-top: 1px solid black;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: rgb(206, 204, 204);
+
+  }
 }

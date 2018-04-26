@@ -28,6 +28,9 @@ body #navigation .button {
 body #navigation .button:hover {
   background-color: white;
 }
+body #navigation .active {
+  background-color: white;
+}
 body #text .text {
   padding: 50px;
 }
