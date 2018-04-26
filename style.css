@@ -33,11 +33,7 @@ body #navigation .active {
 body #text {
   padding: 1%;
 }
-body #text #description #test {
-  display: flex;
-  flex-direction: row;
-}
-body #text #description #test #description_text {
+body #text #description {
   padding-left: 4%;
 }
 body #text .text {
@@ -53,16 +49,6 @@ body #text .text {
   body body #text {
     width: 100%;
     padding: 1%;
-  }
-  body body #text #description #test {
-    display: flex;
-    flex-direction: column;
-  }
-  body body #text #description #test #description_text {
-    padding-left: 4%;
-  }
-  body body #text .text {
-    padding: 4%;
   }
 }
 body #footer {
