@@ -33,24 +33,24 @@ body #navigation .active {
 body #text {
   padding: 1%;
 }
-body #text #fill {
+body #text .text {
+  padding: 4%;
+}
+body #text .text .fill {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-body #text #fill #desc h3 {
+body #text .text .fill .desc h3 {
   text-align: center;
 }
-body #text #fill #desc #note {
+body #text .text .fill .desc #note {
   color: red;
 }
-body #text #fill #me {
+body #text .text .fill #me {
   width: 300px;
   height: 300px;
-}
-body #text .text {
-  padding: 4%;
 }
 body #footer {
   border-top: 1px solid black;
