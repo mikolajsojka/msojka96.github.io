@@ -2,9 +2,9 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  
+
   #navigation {
-    
+
     position: relative;
     display: flex;
     background-color: rgb(27, 27, 27);
@@ -38,10 +38,28 @@ body {
   }
 
   #text {
-    padding:1%;
-    #description{
-            padding-left:4%;
-  }
+    padding: 1%;
+
+    #fill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      #desc {
+
+        h3 {
+          text-align: center;
+        }
+
+      }
+
+      #me {
+        width: 300px;
+        height: 300px;
+      }
+    }
+
     .text {
       padding: 4%;
     }
@@ -58,16 +76,16 @@ body {
     color: rgb(206, 204, 204);
   }
   @media only screen and (max-width: 600px) {
-    body{
-      width:100%;
+    body {
+      width: 100%;
       #navigation {
-        margin:0 auto;
+        margin: 0 auto;
       }
       #text {
-        width:100%;
-        padding:1%;
-       
+        width: 100%;
+        padding: 1%;
+
       }
-}
+    }
   }
 }
