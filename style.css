@@ -52,10 +52,6 @@ body #text .text .fill .desc h3 {
 body #text .text .fill .desc #note {
   color: red;
 }
-body #text .text .fill #me {
-  width: 300px;
-  height: 300px;
-}
 body #footer {
   border-top: 1px solid black;
   position: fixed;
