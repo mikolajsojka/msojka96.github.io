@@ -4,10 +4,14 @@ body {
   margin: 0;
 }
 body #navigation {
+  height: 100px;
+  align-items: center;
+  justify-content: flex-start;
   position: relative;
   display: flex;
   background-color: #1b1b1b;
-  padding: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
   flex-direction: row;
   margin: 0;
 }
