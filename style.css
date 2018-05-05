@@ -19,7 +19,7 @@ body #navigation .button {
   display: flex;
   position: relative;
   border: 3px solid #e7e6e6;
-  background-color: #616161;
+  background-color: #979595;
   border-radius: 5px;
   margin-right: 1%;
   height: 50px;
@@ -29,7 +29,7 @@ body #navigation .button {
   cursor: pointer;
 }
 body #navigation .button:hover {
-  border-color: #a13434;
+  border-color: #337da8;
 }
 body #navigation .active {
   background-color: white;
