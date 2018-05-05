@@ -48,8 +48,8 @@ body #text .text .fill .desc #note {
   color: red;
 }
 body #text #trof {
-  position: absolute;
-  top: 85px;
+  position: fixed;
+  bottom: 0;
   left: 0;
   opacity: 0.2;
   filter: alpha(opacity=20);
@@ -59,6 +59,7 @@ body #footer {
   position: fixed;
   width: 100%;
   background-color: #1b1b1b;
+  height: 20px;
   left: 0;
   bottom: 0;
   text-align: center;
