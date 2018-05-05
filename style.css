@@ -34,9 +34,6 @@ body #navigation .button:hover {
 body #navigation .active {
   background-color: white;
 }
-body #text {
-  padding-top: 2%;
-}
 body #text .text .fill {
   display: flex;
   justify-content: center;
