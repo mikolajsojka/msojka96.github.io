@@ -34,17 +34,15 @@ body #navigation .button:hover {
 body #navigation .active {
   background-color: white;
 }
-body #text {
-  padding: 1%;
-}
 body #text .text {
   padding: 4%;
 }
 body #text .text .fill {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
+}
+body #text .text .fill #me {
+  margin-right: 2%;
 }
 body #text .text .fill .desc h3 {
   text-align: center;
@@ -63,14 +61,11 @@ body #footer {
   color: #cecccc;
 }
 @media only screen and (max-width: 600px) {
-  body body {
-    width: 100%;
+  body .fill {
+    flex-direction: column;
   }
-  body body #navigation {
-    margin: 0 auto;
-  }
-  body body #text {
+  body .fill #me {
     width: 100%;
-    padding: 1%;
+    margin-right: 0;
   }
 }

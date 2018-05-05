@@ -40,28 +40,27 @@ body {
 
   }
 
-  #text {
-    padding: 1%;
-    
+  #text {    
     .text {
       padding: 4%;
     .fill {
       display: flex;
-      align-items: center;
       justify-content: center;
-      flex-direction: column;
 
+      #me{
+        margin-right:2%;
+      }
+     
       .desc {
-
         h3 {
           text-align: center;
         }
-
         #note {
           color: red;
         }
-        
       }
+
+
     }
     }
   }
@@ -77,16 +76,15 @@ body {
     color: rgb(206, 204, 204);
   }
   @media only screen and (max-width: 600px) {
-    body {
-      width: 100%;
-      #navigation {
-        margin: 0 auto;
-      }
-      #text {
-        width: 100%;
-        padding: 1%;
+    .fill{
+      flex-direction: column;
 
+      #me{
+        width:100%;
+        margin-right:0;
       }
+
     }
+  
   }
 }
