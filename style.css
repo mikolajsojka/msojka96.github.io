@@ -29,7 +29,7 @@ body #navigation .button {
   cursor: pointer;
 }
 body #navigation .button:hover {
-  background-color: white;
+  border-color: #a13434;
 }
 body #navigation .active {
   background-color: white;
