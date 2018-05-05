@@ -52,7 +52,7 @@ body #text #trof {
   top: 85px;
   left: 0;
   opacity: 0.2;
-  filter: alpha(opacity=50);
+  filter: alpha(opacity=20);
 }
 body #footer {
   border-top: 1px solid black;
@@ -71,5 +71,8 @@ body #footer {
   body #text .text .fill {
     flex-direction: column;
     align-items: center;
+  }
+  body #text #trof {
+    left: 2%;
   }
 }
