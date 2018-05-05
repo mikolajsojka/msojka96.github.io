@@ -41,10 +41,16 @@ body {
   }
 
   #text {
+    position:relative;
+    top:20px;
     .text {
       .fill {
         display: flex;
         justify-content: center;
+
+        #me{
+          border-radius:10px;
+        }
 
         .desc {
           padding: 0 0 2% 2%;
@@ -81,6 +87,7 @@ body {
   }
   @media only screen and (max-width: 600px) {
     #text {
+      top:0;
       padding-top: 0;
       .text {
         .fill {
