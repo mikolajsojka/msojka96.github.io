@@ -4,8 +4,8 @@ body {
   margin: 0;
 
   #navigation {
-    height:100px;
-    align-items:center;
+    height: 100px;
+    align-items: center;
     justify-content: flex-start;
     position: relative;
     display: flex;
@@ -40,25 +40,24 @@ body {
 
   }
 
-  #text {  
+  #text {
+    padding-top: 2%;
     .text {
-    .fill {
-      display: flex;
-      justify-content: center;
+      .fill {
+        display: flex;
+        justify-content: center;
 
-     
-      .desc {
-        padding:0 0 2% 2%;
-        h3 {
-          text-align: center;
+        .desc {
+          padding: 0 0 2% 2%;
+          h3 {
+            text-align: center;
+          }
+          #note {
+            color: red;
+          }
         }
-        #note {
-          color: red;
-        }
+
       }
-
-
-    }
     }
   }
 
@@ -73,18 +72,16 @@ body {
     color: rgb(206, 204, 204);
   }
   @media only screen and (max-width: 600px) {
-    .text{
-     
-    .fill{
-      flex-direction: column;
-      align-items:center;
+    #text {
+      padding-top: 0;
+      .text {
+        .fill {
+          flex-direction: column;
+          align-items: center;
 
-      #me{
-    
+        }
       }
-
     }
-  }
-  
+
   }
 }
