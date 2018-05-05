@@ -47,6 +47,13 @@ body #text .text .fill .desc h3 {
 body #text .text .fill .desc #note {
   color: red;
 }
+body #text #trof {
+  position: absolute;
+  top: 85px;
+  left: 0;
+  opacity: 0.2;
+  filter: alpha(opacity=50);
+}
 body #footer {
   border-top: 1px solid black;
   position: fixed;
