@@ -61,11 +61,11 @@ body #footer {
   color: #cecccc;
 }
 @media only screen and (max-width: 600px) {
-  body .fill {
+  body .text .fill {
     flex-direction: column;
     align-items: center;
   }
-  body .fill #me {
+  body .text .fill #me {
     margin-right: 0;
   }
 }
