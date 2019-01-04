@@ -24,6 +24,9 @@ body .sector {
   padding: 30px 70px;
   min-height: 100vh;
 }
+body .sector h1 {
+  text-align: center;
+}
 body #button_top {
   position: fixed;
   right: 7;
