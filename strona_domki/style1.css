@@ -36,17 +36,17 @@ html body .sector h1 {
 html body .sector .photos {
   display: flex;
 }
-html body .sector .photos .gallery {
+html body .sector .photos .photo {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
   width: 180px;
 }
-html body .sector .photos .gallery img {
+html body .sector .photos .photo img {
   width: 100%;
   height: auto;
 }
-html body .sector .photos .gallery:hover {
+html body .sector .photos .photo:hover {
   border: 1px solid #777;
 }
 html body .sector .photos .desc {
