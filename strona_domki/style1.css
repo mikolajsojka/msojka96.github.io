@@ -33,6 +33,26 @@ html body .sector {
 html body .sector h1 {
   text-align: center;
 }
+html body .sector .photos {
+  display: flex;
+}
+html body .sector .photos .gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+html body .sector .photos .gallery img {
+  width: 100%;
+  height: auto;
+}
+html body .sector .photos .gallery:hover {
+  border: 1px solid #777;
+}
+html body .sector .photos .desc {
+  padding: 15px;
+  text-align: center;
+}
 html body .sector #contact {
   margin-top: 5vh;
   width: 300px;
@@ -57,6 +77,9 @@ html body footer {
 @media only screen and (max-width: 1000px) {
   html body .sector {
     font-size: 14px;
+  }
+  html body .sector .photos {
+    flex-direction: column;
   }
   html body .sector h1 {
     font-size: 24px;
