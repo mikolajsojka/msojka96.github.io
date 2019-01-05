@@ -55,6 +55,17 @@ html body footer {
   justify-content: center;
 }
 @media only screen and (max-width: 1000px) {
+  html body .sector {
+    font-size: 14px;
+  }
+  html body .sector h1 {
+    font-size: 24px;
+  }
+  html body .sector #contact {
+    width: 200px;
+    height: 200px;
+    font-size: 14px;
+  }
   html body #button_top {
     font-size: 10px;
   }
