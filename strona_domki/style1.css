@@ -1,36 +1,39 @@
-body {
+html {
+  scroll-behavior: smooth;
+}
+html body {
   margin: 0;
 }
-body .navbar .contact {
+html body .navbar .contact {
   cursor: pointer;
 }
-body .navbar .contact a:link {
+html body .navbar .contact a:link {
   color: black;
 }
-body .navbar .contact a:visited {
+html body .navbar .contact a:visited {
   color: black;
 }
-body .navbar .contact a:hover {
+html body .navbar .contact a:hover {
   color: white;
   transition: 0.5s;
 }
-body .navbar .contact a:link {
+html body .navbar .contact a:link {
   text-decoration: none;
 }
-body .navbar .contact a:active {
+html body .navbar .contact a:active {
   color: black;
 }
-body .sector {
+html body .sector {
   padding: 30px 70px;
   min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-body .sector h1 {
+html body .sector h1 {
   text-align: center;
 }
-body .sector #contact {
+html body .sector #contact {
   margin-top: 5vh;
   width: 300px;
   height: 300px;
@@ -41,13 +44,13 @@ body .sector #contact {
   justify-content: center;
   flex-direction: column;
 }
-body #button_top {
+html body #button_top {
   position: fixed;
   right: 7px;
   bottom: 7px;
   padding: 10px;
 }
-body footer {
+html body footer {
   display: flex;
   justify-content: center;
 }
