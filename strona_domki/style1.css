@@ -54,3 +54,8 @@ html body footer {
   display: flex;
   justify-content: center;
 }
+@media only screen and (max-width: 1000px) {
+  html body #button_top {
+    font-size: 10px;
+  }
+}
