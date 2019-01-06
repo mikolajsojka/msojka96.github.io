@@ -23,8 +23,5 @@ document.onreadystatechange = function () {
 
         }
 
-        
-    }
-
-   
+    }   
 };
