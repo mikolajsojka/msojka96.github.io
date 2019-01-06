@@ -34,7 +34,7 @@ html body .sector h1 {
   text-align: center;
 }
 html body .sector #map {
-  width: 100vh;
+  width: 90vh;
   height: 500px;
   background-color: grey;
 }
