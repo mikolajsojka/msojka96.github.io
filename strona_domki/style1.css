@@ -91,7 +91,7 @@ html body footer {
     font-size: 24px;
   }
   html body .sector #map {
-    width: 300px;
+    width: 90vw;
     height: 300px;
   }
   html body .sector #contact {

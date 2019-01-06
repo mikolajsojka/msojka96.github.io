@@ -23,5 +23,16 @@ document.onreadystatechange = function () {
 
         }
 
+            initMap = function() {
+            
+            var rewa = {lat: 54.630823, lng: 18.4793296};
+
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 10, center: rewa});
+
+            var marker = new google.maps.Marker({position: rewa, map: map});
+          }
+
+
     }   
 };

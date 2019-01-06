@@ -6,11 +6,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style1.css">
-    <script src="script1.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+  
   </head>
 
 <body>
@@ -89,22 +88,6 @@
 
         </div>
 
-        <script>
-          function initMap() {
-  // The location of Uluru
-  var rewa = {lat: 54.630823, lng: 18.4793296};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 10, center: rewa});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: rewa, map: map});
-}
-          </script>
-
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmgGkKcgLY3Vs2uTV3o8rwPt-25AInCc4&callback=initMap">
-</script>
-
         <div id="A4" class="sector">
           <h1>Jak dojechać</h1>
           <div id="map"></div>
@@ -127,6 +110,9 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmgGkKcgLY3Vs2uTV3o8rwPt-
 <footer>
     © Copyright Mikołaj Sojka
 </footer>
+
+<script src="script1.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmgGkKcgLY3Vs2uTV3o8rwPt-25AInCc4&callback=initMap"></script>
 
 </body>
 
