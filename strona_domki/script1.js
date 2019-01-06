@@ -14,7 +14,7 @@ document.onreadystatechange = function () {
 
         window.onscroll = function() {
 
-            if(document.documentElement.scrollTop === 0 || document.documentElement.scrollTop === 0){
+            if(document.documentElement.scrollTop === 0 || document.body.scrollTop === 0){
 
                 button.style.visibility="hidden";
                 
