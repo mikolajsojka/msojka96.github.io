@@ -34,7 +34,7 @@ html body .sector h1 {
   text-align: center;
 }
 html body .sector #map {
-  width: 700px;
+  width: 100vh;
   height: 500px;
   background-color: grey;
 }
@@ -91,11 +91,10 @@ html body footer {
     font-size: 24px;
   }
   html body .sector #map {
-    width: 400px;
     height: 300px;
   }
   html body .sector #contact {
-    width: 200px;
+    width: auto;
     height: 200px;
     font-size: 14px;
   }
