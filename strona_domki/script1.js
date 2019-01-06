@@ -14,14 +14,13 @@ document.onreadystatechange = function () {
 
         window.onscroll = function() {
 
-            if(document.documentElement.scrollTop === 0 || document.body.scrollTop === 0){
-
-                button.style.visibility="hidden";
-                
-            }
-            else{
+            if(document.documentElement.scrollTop || document.body.scrollTop ){
                 button.style.visibility="visible";
             }
+            else{
+                button.style.visibility="hidden";
+            }
+
         }
 
         
