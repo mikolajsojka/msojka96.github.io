@@ -30,6 +30,10 @@ html body .sector {
   align-items: center;
   flex-direction: column;
 }
+html body .sector #navigation {
+  margin-top: 10px;
+  width: 800px;
+}
 html body .sector h1 {
   text-align: center;
 }
@@ -84,6 +88,9 @@ html body footer {
 @media only screen and (max-width: 900px) {
   html body .sector {
     font-size: 14px;
+  }
+  html body .sector #navigation {
+    width: 300px;
   }
   html body .sector .photos {
     flex-direction: column;
