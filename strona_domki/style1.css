@@ -25,7 +25,7 @@ html body .navbar .contact a:active {
   color: black;
 }
 html body .sector {
-  padding: 30px 50px;
+  padding: 30px 70px;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -93,11 +93,11 @@ html body footer {
     font-size: 24px;
   }
   html body .sector #map {
-    width: 400px;
+    width: 350px;
     height: 300px;
   }
   html body .sector #contact {
-    width: 400px;
+    width: 350px;
     height: 300px;
     font-size: 14px;
   }
