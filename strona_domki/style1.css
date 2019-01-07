@@ -45,7 +45,7 @@ html body .sector .photos .photo {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
+  width: 400px;
 }
 html body .sector .photos .photo img {
   width: 100%;
@@ -60,8 +60,8 @@ html body .sector .photos .desc {
 }
 html body .sector #contact {
   margin-top: 5vh;
-  width: 300px;
-  height: 300px;
+  width: 800px;
+  height: 500px;
   background-color: #FFCC66;
   color: white;
   display: flex;
@@ -91,12 +91,12 @@ html body footer {
     font-size: 24px;
   }
   html body .sector #map {
-    width: 90vw;
+    width: 400px;
     height: 300px;
   }
   html body .sector #contact {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     font-size: 14px;
   }
   html body #button_top {
