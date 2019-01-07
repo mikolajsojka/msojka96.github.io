@@ -93,12 +93,12 @@ html body footer {
     font-size: 24px;
   }
   html body .sector #map {
-    width: 350px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
   }
   html body .sector #contact {
-    width: 350px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
     font-size: 14px;
   }
   html body #button_top {
