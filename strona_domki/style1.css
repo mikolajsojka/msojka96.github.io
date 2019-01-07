@@ -75,6 +75,7 @@ html body #button_top {
   bottom: 7px;
   padding: 10px;
   visibility: hidden;
+  opacity: 0.5;
 }
 html body footer {
   display: flex;
