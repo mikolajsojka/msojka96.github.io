@@ -89,21 +89,21 @@ html body footer {
     flex-direction: column;
   }
   html body .sector .photos .photo {
-    width: 400px;
+    width: 300px;
   }
   html body .sector .photos .photo img {
-    width: 400px;
+    width: 300px;
     height: auto;
   }
   html body .sector h1 {
     font-size: 24px;
   }
   html body .sector #map {
-    width: 400px;
+    width: 300px;
     height: 300px;
   }
   html body .sector #contact {
-    width: 400px;
+    width: 300px;
     height: 300px;
     font-size: 14px;
   }
