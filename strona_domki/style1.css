@@ -91,6 +91,9 @@ html body footer {
   html body .sector h1 {
     font-size: 24px;
   }
+  html body .sector .photo {
+    width: 80%;
+  }
   html body .sector #map {
     width: 400px;
     height: 300px;
