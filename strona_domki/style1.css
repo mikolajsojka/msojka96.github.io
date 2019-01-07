@@ -3,7 +3,6 @@ html {
 }
 html body {
   margin: 0;
-  width: 100vw;
 }
 html body .navbar .contact {
   cursor: pointer;
@@ -93,12 +92,12 @@ html body footer {
     font-size: 24px;
   }
   html body .sector #map {
-    width: 250px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
   }
   html body .sector #contact {
-    width: 250px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     font-size: 14px;
   }
   html body #button_top {
