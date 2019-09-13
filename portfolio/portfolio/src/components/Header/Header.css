@@ -1,0 +1,45 @@
+.header {
+  background-color: rgb(90, 82, 82);
+  color: white;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.navbar {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+}
+
+.nav{
+  margin-left:10px;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color:rgb(204, 202, 202);
+  transition: 0.5s;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+}

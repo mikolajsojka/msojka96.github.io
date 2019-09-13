@@ -1,0 +1,14 @@
+.ainfo {
+  background-color: rgb(90, 82, 82);
+  color: white;
+  width: 100%;
+  height: 30%;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icons {
+  margin-left: 30px;
+}

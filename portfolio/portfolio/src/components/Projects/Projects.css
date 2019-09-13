@@ -1,0 +1,12 @@
+.projects {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .projects {
+    flex-direction: column;
+  }
+}
