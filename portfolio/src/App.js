@@ -27,9 +27,9 @@ class App extends React.Component {
     return (
       <div className="app">
         <Header />
+        <About direction="fade-right" />
         <Projects direction="fade-down" />
 
-        <About direction="fade-right" />
         <Contact />
         <NavigationIcon
           id="button_top"

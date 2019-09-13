@@ -52,10 +52,10 @@ class Projects extends React.Component {
             title="FIT APP"
             description="Aplikacja służy do prowadzenia rejestrów kalorycznych - zjedzone kalorie/spalone kalorie. Pozwala obliczyć nasze zapotrzebowanie energetyczne. Aplikacja generuje
       na bieżąco raporty kaloryczne dla dowolnie wybranego okresu."
-            image="./1.png"
-            alt="domki rewa"
+            image="./4.png"
+            alt="fitapp"
             presentation="image"
-            src="./1.png"
+            src="./4.png"
           />
         </div>
       </div>
