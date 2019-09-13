@@ -34,10 +34,10 @@ class Projects extends React.Component {
             ]}
             title="Konkurs piękności koni Arabskich"
             description="Aplikacja zaliczeniowa przedmiotu Technologie Sieci Web na Uczelni. Symuluje prowadzenie zawodów online. "
-            image="./1.png"
-            alt="domki rewa"
+            image="./2.png"
+            alt="konie arabskie"
             presentation="image"
-            src="./1.png"
+            src="./2.png"
           />
           <Project
             technology={[
