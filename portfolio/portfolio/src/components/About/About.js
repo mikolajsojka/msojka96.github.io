@@ -43,6 +43,10 @@ class About extends React.Component {
               C++, Ruby, Assembler, C#, batch, SQL, PostgreSQL.
             </li>
           </ul>
+          <b>UWAGA!: </b>
+          Poniżej znajdują się wybrane przeze mnie projekty wraz z przekierowaniami do ich repozytoriów.
+          To portfolio zostało napisane w <b>ReactJS</b>.
+         
         </div>
       </div>
     );

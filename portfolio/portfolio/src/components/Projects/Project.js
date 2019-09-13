@@ -47,16 +47,18 @@ class Project extends React.Component {
   render() {
     AOS.init();
     return (
-      <div className="project">
-        <div className="presentation">
-          {ReactHtmlParser(this.state.presentation)}
+      <a href={this.props.href}>
+        <div className="project">
+          <div className="presentation">
+            {ReactHtmlParser(this.state.presentation)}
+          </div>
+          <div className="description">
+            <h4>{this.props.title}</h4>
+            <p>{this.props.description}</p>
+            {ReactHtmlParser(this.state.list)}
+          </div>
         </div>
-        <div className="description">
-          <h4>{this.props.title}</h4>
-          <p>{this.props.description}</p>
-          {ReactHtmlParser(this.state.list)}
-        </div>
-      </div>
+      </a>
     );
   }
 }

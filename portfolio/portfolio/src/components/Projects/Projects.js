@@ -21,6 +21,7 @@ class Projects extends React.Component {
             alt="domki rewa"
             presentation="image"
             src="./1.png"
+            href="https://github.com/msojka96/msojka96.github.io/tree/master/strona_domki"
           />
           <Project
             technology={[
@@ -38,6 +39,7 @@ class Projects extends React.Component {
             alt="konie arabskie"
             presentation="image"
             src="./2.png"
+            href="https://github.com/msojka96/tsw/tree/master/project-horses"
           />
           <Project
             technology={[
@@ -56,6 +58,7 @@ class Projects extends React.Component {
             alt="fitapp"
             presentation="image"
             src="./4.png"
+            href="https://github.com/msojka96/inf_exp/tree/master/fitApp"
           />
         </div>
       </div>
