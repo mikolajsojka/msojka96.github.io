@@ -30,7 +30,7 @@ class App extends React.Component {
         <About direction="fade-right" />
         <Projects direction="fade-down" />
 
-        <Contact />
+        <Contact direction="fade-left"/>
         <NavigationIcon
           id="button_top"
           className={this.state.classname}
