@@ -7,10 +7,10 @@ import "aos/dist/aos.css";
 class Project extends React.Component {
   state = { list: "", presentation: "" };
   componentDidMount() {
-    console.log(this.props.technology);
     let temp = "<ul>";
     this.props.technology.map(element => {
       temp += `<li><b>${element}</b></li>`;
+      return 0;
     });
     temp += "</ul>";
     this.setState({ list: temp });

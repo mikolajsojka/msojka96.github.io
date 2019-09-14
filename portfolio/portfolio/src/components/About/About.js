@@ -12,7 +12,7 @@ class About extends React.Component {
     return (
       <div className="about" id="A2" data-aos={this.props.direction}>
         <div id="about">
-          <img src="me.jpg" id="me" alt="me"></img>
+          <img src="me.JPG" id="me" alt="me"></img>
         </div>
 
         <div id="life">
