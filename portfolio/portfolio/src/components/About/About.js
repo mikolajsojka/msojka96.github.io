@@ -13,7 +13,6 @@ class About extends React.Component {
       <div className="about" id="A2" data-aos={this.props.direction}>
         <div id="about">
           <img src="me.jpg" id="me" alt="me"></img>
-          <div id="name">Mikołaj Sojka</div>
         </div>
 
         <div id="life">
@@ -44,8 +43,8 @@ class About extends React.Component {
             </li>
           </ul>
           <b>UWAGA!: </b>
-          Poniżej znajdują się wybrane przeze mnie projekty wraz z przekierowaniami do ich repozytoriów.
-          To portfolio zostało napisane w <b>ReactJS</b>.
+          <p>Poniżej znajdują się wybrane przeze mnie projekty wraz z przekierowaniami do ich repozytoriów.
+          To portfolio zostało napisane w <b>ReactJS</b>.</p><br />
          
         </div>
       </div>

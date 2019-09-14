@@ -6,10 +6,6 @@
 }
 
 #A2 {
-  background-color: grey;
-}
-
-#A2 {
   min-height: 100vh;
 }
 
@@ -18,18 +14,8 @@
 }
 
 #me {
-  width: 25vw;
-  height: 30%;
-}
-
-#name {
-  color: white;
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  width: 70%;
-  align-items: center;
-  background-color: rgb(90, 82, 82);
+  width: 100%;
+  height: auto;
 }
 
 #life {
@@ -52,10 +38,6 @@
     margin-left: 0;
     margin-right: 0;
     height: auto;
-  }
-
-  #me {
-    width: 30%;
   }
 }
 
