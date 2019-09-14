@@ -1,177 +1,158 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 
-body{
-   
-    margin:0;
+  body {
+    margin: 0;
 
-    .navbar{
+    .navbar {
+      .contact {
+        cursor: pointer;
 
-    .contact{
-        cursor:pointer;
-
-        a:link{
-            color:black;
+        a:link {
+          color: black;
         }
 
-        a:visited{
-            color:black;
+        a:visited {
+          color: black;
         }
 
-        a:hover{
-            color:white;
-            transition:0.5s;
+        a:hover {
+          color: white;
+          transition: 0.5s;
         }
 
         a:link {
-            text-decoration: none;
-          }
-
-        a:active{
-            color:black;
+          text-decoration: none;
         }
 
-
+        a:active {
+          color: black;
+        }
+      }
     }
 
-}
+    .sector {
+      padding: 0 70px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
 
-    .sector{
-        padding:30px 70px;
-        min-height:100vh;
-        display:flex;
-        align-items: center;
-        flex-direction: column;
+      img{
+          width:100vh;
+          height:auto;
+      }
 
-        #navigation{
-            margin-top:10px;
-            width:800px;
+      #navigation {
+        margin-top: 10px;
+        width: 800px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      #map {
+        width: 800px;
+        height: 500px;
+        background-color: grey;
+      }
+
+      .photos {
+        display: flex;
+
+        .photo {
+          margin: 5px;
+          border: 1px solid #ccc;
+          float: left;
+          width: 400px;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
-        
-        h1{
-            text-align:center;
+
+        .photo:hover {
+          border: 1px solid #777;
+        }
+
+        .desc {
+          padding: 15px;
+          text-align: center;
+        }
+      }
+
+      #contact {
+        margin-top: 5vh;
+        width: 800px;
+        height: 500px;
+        background-color: #ffcc66;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      p {
+      }
+    }
+
+    #button_top {
+      position: fixed;
+      right: 7px;
+      bottom: 7px;
+      padding: 10px;
+      visibility: hidden;
+      opacity: 0.5;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media only screen and (max-width: 900px) {
+      .sector {
+        font-size: 14px;
+
+        #navigation {
+          width: 300px;
+        }
+
+        .photos {
+          flex-direction: column;
+
+          .photo {
+            width: 300px;
+
+            img {
+              width: 300px;
+              height: auto;
+            }
+          }
+        }
+
+        h1 {
+          font-size: 24px;
         }
 
         #map {
-            width:800px;
-            height: 500px;
-            background-color: grey;
-          }
-
-        .photos{
-            display:flex;
-            
-
-        .photo {
-            margin: 5px;
-            border: 1px solid #ccc;
-            float: left;
-            width: 400px;
-
-            img {
-                width: 100%;
-                height: auto;
-              }
-
-          }
-          
-          .photo:hover {
-            border: 1px solid #777;
-          }
-            
-          .desc {
-            padding: 15px;
-            text-align: center;
-          }
-
+          width: 300px;
+          height: 300px;
         }
 
-        #contact{
-            margin-top:5vh;
-            width:800px;
-            height:500px;
-            background-color: #FFCC66;
-            color:white;
-            display:flex;
-            align-items: center;
-            justify-content:center;
-            flex-direction: column;
+        #contact {
+          width: 300px;
+          height: 300px;
+          font-size: 14px;
         }
+      }
 
-        p{
-            
-        }
+      #button_top {
+        font-size: 10px;
+      }
     }
-
-    
-
-    #button_top{
-        position:fixed;
-        right:7px;
-        bottom:7px;
-        padding:10px;
-        visibility: hidden;
-        opacity:0.5;
-    }
-
-    footer{
-        display:flex;
-        justify-content:center;
-    }
-
- 
-
-
-
-    @media only screen and (max-width: 900px) {
-    
-        .sector{
-
-            font-size:14px;
-
-            #navigation{
-                width:300px;
-            }
-
-            .photos{
-                flex-direction:column;
-
-                .photo{
-                    width:300px;
-    
-                    img {
-                        width: 300px;
-                        height: auto;
-                      }
-                      
-                }
-            }
-            
-            h1{
-                font-size:24px;
-            }
-
-            
-            
-
-            #map{
-                width:300px;
-                height:300px;
-            }
-
-            #contact{
-                width:300px;
-                height:300px;
-                font-size:14px;
-            }
-        }
-
-        #button_top{
-            font-size:10px;
-        }
-
-    }
-
-}
-
+  }
 }

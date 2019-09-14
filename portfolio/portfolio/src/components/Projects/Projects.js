@@ -37,6 +37,7 @@ class Projects extends React.Component {
             description="Aplikacja zaliczeniowa przedmiotu Technologie Sieci Web na Uczelni. Symuluje prowadzenie zawodów online. "
             image="./2.png"
             alt="konie arabskie"
+            id="horses"
             presentation="image"
             src="./2.png"
             href="https://github.com/msojka96/tsw/tree/master/project-horses"

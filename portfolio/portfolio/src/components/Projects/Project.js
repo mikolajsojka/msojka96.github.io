@@ -35,6 +35,7 @@ class Project extends React.Component {
     if (this.props.presentation === "image") {
       temp = `<img
       src=${this.props.src}
+      id=${this.props.id}
       width="100%"
       height="100%"
       alt=${this.props.alt}
