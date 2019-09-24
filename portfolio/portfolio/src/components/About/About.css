@@ -45,4 +45,8 @@
   #name {
     font-size: 20px;
   }
+
+  #me{
+    height:100%;
+  }
 }
