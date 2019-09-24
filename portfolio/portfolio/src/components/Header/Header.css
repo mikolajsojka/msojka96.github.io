@@ -1,7 +1,7 @@
 .header {
   background-color: rgb(90, 82, 82);
   color: white;
-  min-height: 15vh;
+  height:15vh;
   display: flex;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -46,3 +46,4 @@ a:link {
 a:active {
   color: white;
 }
+

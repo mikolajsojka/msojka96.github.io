@@ -30,12 +30,20 @@ class App extends React.Component {
         <About direction="fade-right" />
         <Projects direction="fade-down" />
 
-        <Contact direction="fade-left"/>
+        <Contact direction="fade-left" />
         <NavigationIcon
           id="button_top"
           className={this.state.classname}
           onClick={this.handleClick}
         />
+
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+          <img
+            id="w3c"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Poprawny CSS!"
+          />
+        </a>
 
         <footer>© Copyright Mikołaj Sojka</footer>
       </div>
