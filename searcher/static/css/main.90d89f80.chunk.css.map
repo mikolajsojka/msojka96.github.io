@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,MACE,UACF,CAFA,SACE,YAAa,CACb,6BACF","file":"main.90d89f80.chunk.css","sourcesContent":["#buttons {\r\n  display: flex;\r\n  justify-content: space-between;\r\n}\r\n"]}
