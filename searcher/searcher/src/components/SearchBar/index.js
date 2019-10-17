@@ -17,7 +17,7 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div id="searchbar">
-        <b>Searcher App</b>
+        <b>Searcher App for Wikipedia</b>
         <form>
           <input onKeyDown={this.handleKey} />
         </form>
