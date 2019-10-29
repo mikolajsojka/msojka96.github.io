@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  width: 100%;
+  background-color: #cbeecb;
+  justify-content: flex-end;
+  padding: 10px;
+  padding-right: 30px;
+}
+.header .header-buttons {
+  display: flex;
+  align-self: flex-end;
+}
+.header .header-buttons .button {
+  width: 150px;
+}
+@media (max-width: 1000px) {
+  .header {
+    justify-content: center;
+  }
+}
