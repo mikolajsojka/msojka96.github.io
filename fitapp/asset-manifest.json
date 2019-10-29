@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/static/js/main.f43def54.chunk.js",
-    "main.js.map": "/static/js/main.f43def54.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.082a1eba.chunk.css": "/static/css/2.082a1eba.chunk.css",
-    "static/js/2.abc70ba5.chunk.js": "/static/js/2.abc70ba5.chunk.js",
-    "static/js/2.abc70ba5.chunk.js.map": "/static/js/2.abc70ba5.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.74d7106d9becf8d1cdb0f83732059e4b.js": "/precache-manifest.74d7106d9becf8d1cdb0f83732059e4b.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.082a1eba.chunk.css.map": "/static/css/2.082a1eba.chunk.css.map",
-    "static/media/react-widgets.css": "/static/media/rw-widgets.eceddf47.ttf"
+    "main.js": "/fitapp/static/js/main.f43def54.chunk.js",
+    "main.js.map": "/fitapp/static/js/main.f43def54.chunk.js.map",
+    "runtime~main.js": "/fitapp/static/js/runtime~main.e7b83fdd.js",
+    "runtime~main.js.map": "/fitapp/static/js/runtime~main.e7b83fdd.js.map",
+    "static/css/2.19706c03.chunk.css": "/fitapp/static/css/2.19706c03.chunk.css",
+    "static/js/2.abc70ba5.chunk.js": "/fitapp/static/js/2.abc70ba5.chunk.js",
+    "static/js/2.abc70ba5.chunk.js.map": "/fitapp/static/js/2.abc70ba5.chunk.js.map",
+    "index.html": "/fitapp/index.html",
+    "precache-manifest.464029ed29b60be0105142d126c294a5.js": "/fitapp/precache-manifest.464029ed29b60be0105142d126c294a5.js",
+    "service-worker.js": "/fitapp/service-worker.js",
+    "static/css/2.19706c03.chunk.css.map": "/fitapp/static/css/2.19706c03.chunk.css.map",
+    "static/media/react-widgets.css": "/fitapp/static/media/rw-widgets.eceddf47.ttf"
   }
 }
