@@ -1,0 +1,157 @@
+.class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  flex-direction: column;
+}
+.class .panel {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  flex-direction: column;
+}
+.class .panel .button {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: #222222;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.class .panel .button:hover {
+  background-color: white;
+  color: black;
+  transition-duration: 2s;
+}
+.class .panel .save {
+  background-color: #27bd27;
+}
+.class .panel .delete {
+  background-color: #db5252;
+}
+.class .panel .main {
+  margin: 0;
+  padding: 5px 0 5px 0;
+}
+.class .panel .main .info {
+  display: flex;
+  border: 1px solid black;
+  padding: 5px;
+  align-items: center;
+}
+.class .panel .main .info .first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.class .panel .main .info .first .classname {
+  display: flex;
+}
+.class .panel .main .info .first .classname .number {
+  padding: 5px;
+}
+.class .panel .main .info .first .classname input {
+  margin-bottom: 5px;
+}
+.class .panel .main .info .first input {
+  margin-bottom: 5px;
+}
+.class .panel .main .info .first label {
+  margin-bottom: 5px;
+}
+.class .panel .main .info .first select {
+  width: 100%;
+}
+.class .panel .main .info .first .judge-pagination {
+  display: flex;
+  width: 160px;
+  justify-content: center;
+  align-items: center;
+}
+.class .panel .main .info .first .judge-pagination .pages {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  background-color: #222222;
+  color: white;
+  cursor: pointer;
+}
+.class .panel .main .info .first .judge-pagination div {
+  width: 50px;
+  cursor: pointer;
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+.class .panel .main .info .first .judge-pagination div:hover {
+  background-color: #6e6e6e;
+  color: white;
+  transition-duration: 2s;
+}
+.class .panel .main .info .first .judge {
+  background-color: #222222;
+  color: white;
+  width: 150px;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+.class .panel .main .info .first .judge .name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: 150px;
+}
+.class .panel .main .info .first .judge .name:hover {
+  background-color: #6e6e6e;
+  color: white;
+  transition-duration: 2s;
+}
+.class .panel .main .info .first .judge .delete {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 150px;
+  height: 40%;
+}
+.class .panel .main .info .first .judge .delete:hover {
+  background-color: white;
+  color: black;
+  transition-duration: 2s;
+}
+.class .panel .main .info .first .add {
+  background-color: #27bd27;
+}
+.class .panel .main .info .first .add:hover {
+  background-color: white;
+  color: black;
+  transition-duration: 2s;
+}
+.class .panel .main .info .second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.class .panel .main .info .second input {
+  margin-bottom: 5px;
+}
+.class .panel .main .info .second label {
+  margin-bottom: 5px;
+}
+@media (max-width: 400px) {
+  .info {
+    flex-direction: column;
+  }
+}

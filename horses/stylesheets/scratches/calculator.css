@@ -1,0 +1,135 @@
+#calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  flex-direction: column;
+  flex: 1;
+}
+#calculator div .podium {
+  overflow: auto;
+  border: 1px solid black;
+  height: 100px;
+  width: 390px;
+  margin-bottom: 10px;
+  padding: 5px 5px 0 5px;
+  cursor: pointer;
+  resize: both;
+}
+#calculator div .podium div {
+  background-color: black;
+  color: white;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+#calculator .category {
+  background-color: #222222;
+  color: white;
+  min-height: 50px;
+  width: 400px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+}
+#calculator .category .name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#calculator .noteinfo {
+  margin: 0;
+  display: flex;
+  height: auto;
+  width: 400px;
+  height: 40px;
+}
+#calculator .noteinfo .choosehorse {
+  width: 50%;
+}
+#calculator .noteinfo div {
+  width: 10%;
+  padding: 0 5px;
+  border: 2px solid black;
+  background-color: #999292;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#calculator .notes {
+  width: 400px;
+  height: 40px;
+}
+#calculator .notes .arbitrator {
+  width: 400px;
+  min-height: 40px;
+  background-color: #eb0f0f;
+  color: white;
+  display: flex;
+}
+#calculator .notes .arbitrator input {
+  width: 50%;
+  height: 40px;
+}
+#calculator .notes .arbitrator div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#calculator .notes .result {
+  cursor: pointer;
+  width: 100%;
+  background-color: #d4d3d3;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#calculator .notes .row {
+  height: 40px;
+  display: flex;
+}
+#calculator .notes .row input {
+  width: 10%;
+}
+#calculator .notes .row .judge {
+  color: white;
+  background-color: #999292;
+  height: 100%;
+  width: 50%;
+  margin: 0;
+  cursor: pointer;
+}
+#calculator .notes .row .judge:hover {
+  background-color: #6e6e6e;
+  color: white;
+  transition-duration: 2s;
+}
+#calculator .size {
+  width: 400px;
+}
+@media (max-width: 400px) {
+  #calculator .podium {
+    width: 100%;
+  }
+  #calculator .category {
+    flex-direction: column;
+    width: 100%;
+  }
+  #calculator .category .name {
+    width: 100%;
+    padding: 5px 0 5px 0;
+  }
+  #calculator .size {
+    width: 100%;
+  }
+  #calculator .noteinfo {
+    width: 100%;
+  }
+  #calculator .notes {
+    width: 100%;
+  }
+}

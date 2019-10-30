@@ -1,0 +1,76 @@
+.judge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  flex-direction: column;
+}
+.judge .panel {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  flex-direction: column;
+}
+.judge .panel .button {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: #222222;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.judge .panel .button:hover {
+  background-color: white;
+  color: black;
+  transition-duration: 2s;
+}
+.judge .panel .save {
+  background-color: #27bd27;
+}
+.judge .panel .delete {
+  background-color: #db5252;
+}
+.judge .panel .main {
+  margin: 0;
+  padding: 5px 0 5px 0;
+}
+.judge .panel .main .info {
+  display: flex;
+  border: 1px solid black;
+  padding: 5px;
+}
+.judge .panel .main .info .first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin-right: 5px;
+}
+.judge .panel .main .info .first input {
+  margin-bottom: 5px;
+}
+.judge .panel .main .info .first label {
+  margin-bottom: 5px;
+}
+.judge .panel .main .info .first select {
+  width: 100%;
+}
+.judge .panel .main .info .second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.judge .panel .main .info .second input {
+  margin-bottom: 5px;
+}
+.judge .panel .main .info .second label {
+  margin-bottom: 5px;
+}
+@media (max-width: 400px) {
+  .info {
+    flex-direction: column;
+  }
+}
