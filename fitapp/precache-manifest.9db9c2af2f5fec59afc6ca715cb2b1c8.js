@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6cbb1b665be534d279f1bb153b195c62",
+    "revision": "78362687d8c4ab1cadd028ea0a5d9d9b",
     "url": "/fitapp/index.html"
   },
   {
-    "revision": "bb0802d0260b7406182d",
-    "url": "/fitapp/static/css/2.19706c03.chunk.css"
+    "revision": "9eacc9a486b03c761131",
+    "url": "/fitapp/static/css/2.7365a4d9.chunk.css"
   },
   {
-    "revision": "bb0802d0260b7406182d",
-    "url": "/fitapp/static/js/2.abc70ba5.chunk.js"
+    "revision": "9eacc9a486b03c761131",
+    "url": "/fitapp/static/js/2.9eea07e7.chunk.js"
   },
   {
-    "revision": "3b177d65b11ab28abf85",
-    "url": "/fitapp/static/js/main.f43def54.chunk.js"
+    "revision": "b45a3568e93ecbca43ea",
+    "url": "/fitapp/static/js/main.1c38cf57.chunk.js"
   },
   {
     "revision": "f5a19371bd5c4fbb3731",
