@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/domki/static/css/main.368a136e.chunk.css",
+    "main.css": "/domki/static/css/main.c19d60f7.chunk.css",
     "main.js": "/domki/static/js/main.01680af5.chunk.js",
     "main.js.map": "/domki/static/js/main.01680af5.chunk.js.map",
     "runtime-main.js": "/domki/static/js/runtime-main.58859bc7.js",
@@ -9,10 +9,10 @@
     "static/js/2.dc769a6d.chunk.js": "/domki/static/js/2.dc769a6d.chunk.js",
     "static/js/2.dc769a6d.chunk.js.map": "/domki/static/js/2.dc769a6d.chunk.js.map",
     "index.html": "/domki/index.html",
-    "precache-manifest.720e64d2224619d37dc152aa7cdde7c1.js": "/domki/precache-manifest.720e64d2224619d37dc152aa7cdde7c1.js",
+    "precache-manifest.2276eca6220efe0f92290dd2bfe8d854.js": "/domki/precache-manifest.2276eca6220efe0f92290dd2bfe8d854.js",
     "service-worker.js": "/domki/service-worker.js",
     "static/css/2.62027c08.chunk.css.map": "/domki/static/css/2.62027c08.chunk.css.map",
-    "static/css/main.368a136e.chunk.css.map": "/domki/static/css/main.368a136e.chunk.css.map",
+    "static/css/main.c19d60f7.chunk.css.map": "/domki/static/css/main.c19d60f7.chunk.css.map",
     "static/js/2.dc769a6d.chunk.js.LICENSE": "/domki/static/js/2.dc769a6d.chunk.js.LICENSE",
     "static/media/style.css": "/domki/static/media/3.96c0d9fa.jpg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.58859bc7.js",
     "static/css/2.62027c08.chunk.css",
     "static/js/2.dc769a6d.chunk.js",
-    "static/css/main.368a136e.chunk.css",
+    "static/css/main.c19d60f7.chunk.css",
     "static/js/main.01680af5.chunk.js"
   ]
 }
