@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8cb75cc1efc2b284b77180b2c71846f8",
+    "revision": "6692035f8877af27076729fb60bd7306",
     "url": "/domki/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/domki/static/css/2.62027c08.chunk.css"
   },
   {
-    "revision": "a78dd478ccb8a7a8e427",
-    "url": "/domki/static/css/main.1032c61a.chunk.css"
+    "revision": "24ae2b3d4665f5fcdddf",
+    "url": "/domki/static/css/main.99247a4d.chunk.css"
   },
   {
     "revision": "5f726ac0999a388cb9f9",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/domki/static/js/2.47a4390f.chunk.js.LICENSE"
   },
   {
-    "revision": "a78dd478ccb8a7a8e427",
-    "url": "/domki/static/js/main.d394c9da.chunk.js"
+    "revision": "24ae2b3d4665f5fcdddf",
+    "url": "/domki/static/js/main.03b5d803.chunk.js"
   },
   {
     "revision": "9ae95b6e82ec49b6488d",
