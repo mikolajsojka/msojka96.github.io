@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/domki/precache-manifest.b9023c773b98a14e26f9edcfb7543ba8.js"
+  "/domki/precache-manifest.66dc436431c9ed8afe6f11c2b568acc3.js"
 );
 
 self.addEventListener('message', (event) => {
