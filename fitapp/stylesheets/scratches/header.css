@@ -1,20 +1,18 @@
 .header {
   display: flex;
   width: 100%;
-  background-color: #cbeecb;
-  justify-content: flex-end;
+  background-color: white;
   padding: 10px;
   padding-right: 30px;
 }
-.header .header-buttons {
+.header .header-panel {
   display: flex;
-  align-self: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-.header .header-buttons .button {
-  width: 150px;
-}
-@media (max-width: 1000px) {
-  .header {
-    justify-content: center;
-  }
+.header .header-panel .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

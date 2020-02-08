@@ -1,35 +1,10 @@
-#loginAll {
+#login {
   width: 100%;
-  display: flex;
-}
-#loginAll #appInfo {
-  width: 50%;
-  background-color: #f0eeee;
-  min-height: 100vh;
-  padding: 20px;
-}
-#loginAll #appInfo h4 {
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-#loginAll #appInfo #description {
-  display: flex;
-  flex-direction: column;
-  text-indent: 20px;
-  text-align: center;
-}
-#loginAll #appInfo #description .text {
-  padding: 10px;
-}
-#loginAll #appInfo #description img {
-  padding: 10px;
-  width: 100%;
-}
-#loginAll #login {
-  width: 50%;
-  justify-content: flex-end;
-  text-align: center;
-}
-#loginAll #login .form-container {
+#login .form-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,19 +12,7 @@
   position: relative;
   flex-direction: column;
 }
-#loginAll #login .form-container .button {
+#login .form-container .button {
   width: 100%;
   margin-bottom: 10px;
-}
-@media (max-width: 1000px) {
-  #loginAll {
-    flex-direction: column;
-  }
-  #loginAll #appInfo {
-    height: 500px;
-    width: 100%;
-  }
-  #loginAll #login {
-    width: 100%;
-  }
 }

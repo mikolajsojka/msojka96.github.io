@@ -11,17 +11,17 @@
   width: 100%;
   padding: 30px;
 }
-.main .data {
-  background-color: yellow;
-}
 .main .data .table {
-  background-color: #d8eed8;
   margin: 0;
 }
 .main .data .table thead tr {
   text-align: center;
+  background-color: #e0e1e2;
 }
 .main .data .table thead tr th {
+  text-align: center;
+}
+.main .data .table tbody tr {
   text-align: center;
 }
 .main .data .table tbody tr td {
