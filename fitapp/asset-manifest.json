@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/fitapp/static/js/main.02837da1.chunk.js",
-    "main.js.map": "/fitapp/static/js/main.02837da1.chunk.js.map",
+    "main.js": "/fitapp/static/js/main.278863e5.chunk.js",
+    "main.js.map": "/fitapp/static/js/main.278863e5.chunk.js.map",
     "runtime~main.js": "/fitapp/static/js/runtime~main.e7b83fdd.js",
     "runtime~main.js.map": "/fitapp/static/js/runtime~main.e7b83fdd.js.map",
     "static/css/2.81d04f9e.chunk.css": "/fitapp/static/css/2.81d04f9e.chunk.css",
-    "static/js/2.e1f33ef0.chunk.js": "/fitapp/static/js/2.e1f33ef0.chunk.js",
-    "static/js/2.e1f33ef0.chunk.js.map": "/fitapp/static/js/2.e1f33ef0.chunk.js.map",
+    "static/js/2.4c1edb1f.chunk.js": "/fitapp/static/js/2.4c1edb1f.chunk.js",
+    "static/js/2.4c1edb1f.chunk.js.map": "/fitapp/static/js/2.4c1edb1f.chunk.js.map",
     "index.html": "/fitapp/index.html",
-    "precache-manifest.fa7054c4f3e7852511dd7ef18b2a793b.js": "/fitapp/precache-manifest.fa7054c4f3e7852511dd7ef18b2a793b.js",
+    "precache-manifest.fa0156defeb530aed32fe07ce3fbda07.js": "/fitapp/precache-manifest.fa0156defeb530aed32fe07ce3fbda07.js",
     "service-worker.js": "/fitapp/service-worker.js",
     "static/css/2.81d04f9e.chunk.css.map": "/fitapp/static/css/2.81d04f9e.chunk.css.map",
     "static/media/react-widgets.css": "/fitapp/static/media/rw-widgets.eceddf47.ttf"
