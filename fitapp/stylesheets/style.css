@@ -16,6 +16,12 @@
   width: 100%;
   margin-bottom: 10px;
 }
+#login .form-container .my-button {
+  width: 180px;
+}
+#login .form-container a {
+  width: 100%;
+}
 .header {
   display: flex;
   width: 100%;
@@ -139,6 +145,12 @@
 #meals .form-container .button {
   width: 100%;
 }
+#changePassword {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 #changePassword .form-container {
   display: flex;
   align-items: center;
@@ -146,14 +158,6 @@
   padding: 20px;
   position: relative;
   flex-direction: column;
-}
-#changePassword .form-container .sendmail {
-  width: 400px;
-  text-align: center;
-}
-#changePassword .form-container .changepassword {
-  width: 400px;
-  text-align: center;
 }
 #changePassword .form-container .button {
   width: 100%;

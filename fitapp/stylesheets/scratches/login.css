@@ -16,3 +16,9 @@
   width: 100%;
   margin-bottom: 10px;
 }
+#login .form-container .my-button {
+  width: 180px;
+}
+#login .form-container a {
+  width: 100%;
+}
