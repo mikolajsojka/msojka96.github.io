@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/fitapp/static/js/main.3a6a123c.chunk.js",
-    "main.js.map": "/fitapp/static/js/main.3a6a123c.chunk.js.map",
+    "main.js": "/fitapp/static/js/main.7722c4e3.chunk.js",
+    "main.js.map": "/fitapp/static/js/main.7722c4e3.chunk.js.map",
     "runtime~main.js": "/fitapp/static/js/runtime~main.e7b83fdd.js",
     "runtime~main.js.map": "/fitapp/static/js/runtime~main.e7b83fdd.js.map",
     "static/css/2.7365a4d9.chunk.css": "/fitapp/static/css/2.7365a4d9.chunk.css",
     "static/js/2.079d9f0e.chunk.js": "/fitapp/static/js/2.079d9f0e.chunk.js",
     "static/js/2.079d9f0e.chunk.js.map": "/fitapp/static/js/2.079d9f0e.chunk.js.map",
     "index.html": "/fitapp/index.html",
-    "precache-manifest.a54f98115877a9f4bdc389e816308cbe.js": "/fitapp/precache-manifest.a54f98115877a9f4bdc389e816308cbe.js",
+    "precache-manifest.81012b9c9ce2864b43d11a5d31f9f845.js": "/fitapp/precache-manifest.81012b9c9ce2864b43d11a5d31f9f845.js",
     "service-worker.js": "/fitapp/service-worker.js",
     "static/css/2.7365a4d9.chunk.css.map": "/fitapp/static/css/2.7365a4d9.chunk.css.map",
     "static/media/react-widgets.css": "/fitapp/static/media/rw-widgets.eceddf47.ttf"
