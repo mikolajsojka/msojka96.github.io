@@ -58,6 +58,7 @@
             'Access-Control-Allow-Origin': 'https://api.covid19api.com'
         }
     }
+    const defaultCountry = 'Poland'
 
     const successRequestStatus = [200, 201, 202, 203, 204]
 
@@ -68,29 +69,26 @@
     }
 
     function fillCountriesList(data) {
-        const countriesList = document.createElement('div')
-        countriesList.id = 'countries-list'
+        const countriesList = createHtmlElement('div','countries-list')
         const listElements = []
 
         data.forEach((element, index) => {
-            let htmlElement = document.createElement('div')
-            htmlElement.id = 'country-item'
+            let htmlElement = createHtmlElement('div','country-item')
             htmlElement.innerText = element['Country']
             htmlElement.onclick = () => countryOnClick(element)
             listElements.push(htmlElement)
-            index || countryOnClick(element)
+            index || countryOnClick(data.find(element => element['Country'] === defaultCountry))
         })
 
         listElements.forEach(element => countriesList.appendChild(element))
 
-        const allCountries = document.createElement('marquee')
-        allCountries.id = 'all-countries'
+        const allCountries = createHtmlElement('marquee','all-countries')
         allCountries.appendChild(countriesList)
 
         document.querySelector('#navbar').appendChild(allCountries)
 
-        document.querySelector('#app-loader').style.display = 'none';
-        document.querySelector('#app').style.display = 'block';
+        updateElementDisplayValue('app-loader', 'none')
+        updateElementDisplayValue('app', 'block')
     }
 
     function countryOnClick({
@@ -99,18 +97,25 @@
                                 TotalRecovered: totalRecovered,
                                 Country: country
                             }) {
+        updateCovidElement('statistics-name', country)
+        updateCovidElement('statistics-total-recovered', totalRecovered)
+        updateCovidElement('statistics-total-deaths', totalDeaths)
+        updateCovidElement('statistics-total-confirmed', totalConfirmed)
+    }
 
-        const statisticsCountry = document.querySelector('#statistics-name')
-        const statisticsTotalRecovered = document.querySelector('#statistics-total-recovered')
-        const statisticsTotalDeaths = document.querySelector('#statistics-total-deaths')
-        const statisticsTotalConfirmed = document.querySelector('#statistics-total-confirmed')
+    function createHtmlElement(tag, id) {
+        let element = document.createElement(tag)
+        element.id = id
 
-        statisticsCountry.textContent = country.toString()
-        statisticsTotalRecovered.textContent = totalRecovered.toString()
-        statisticsTotalDeaths.textContent = totalDeaths.toString()
-        statisticsTotalConfirmed.textContent = totalConfirmed.toString()
+        return element
+    }
 
+    function updateCovidElement(idName, value) {
+        document.querySelector(`#${idName}`).textContent = value.toString()
+    }
 
+    function updateElementDisplayValue(idName, value) {
+        document.querySelector(`#${idName}`).style.display = value;
     }
 
     fetchCovidData()
@@ -125,15 +130,15 @@
     #app {
         width: 100%;
         height: 100%;
-        display:none;
+        display: none;
     }
 
-    #app-loader{
+    #app-loader {
         width: 100%;
         height: 100%;
         font-size: 24px;
         font-weight: bold;
-        display:flex;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
@@ -171,6 +176,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 0 25px;
+        font-size: 24px;
         margin-bottom: 25px;
         background-color: #D9CFCD;
     }
