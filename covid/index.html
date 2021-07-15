@@ -1,0 +1,185 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="app">
+    <div id="navbar"></div>
+
+    <div id="statistics">
+
+        <div class="statistics-element">
+            <div class="statistics-text">Covid statistics:</div>
+        </div>
+
+        <div class="statistics-element">
+            <div class="statistics-text">Country:</div>
+            <div class="statistics-text statistics-element-end" id="statistics-name"></div>
+        </div>
+
+        <div class="statistics-element">
+            <div class="statistics-text">Total recovered:</div>
+            <div class="statistics-text statistics-element-end" id="statistics-total-recovered"></div>
+        </div>
+
+        <div class="statistics-element">
+            <div class="statistics-text">Total deaths:</div>
+            <div class="statistics-text statistics-element-end" id="statistics-total-deaths"></div>
+        </div>
+
+        <div class="statistics-element">
+            <div class="statistics-text">Total confirmed:</div>
+            <div class="statistics-text statistics-element-end" id="statistics-total-confirmed"></div>
+        </div>
+
+    </div>
+</div>
+
+<div id="app-loader">Fetching data...</div>
+
+</body>
+
+</html>
+
+<script>
+    const covidStatisticsApi = 'https://api.covid19api.com/summary'
+    const requestBody = {
+        method: 'GET',
+        mode: 'cors',
+        cache: 'no-cache',
+        credentials: 'same-origin',
+        headers: {
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': 'https://api.covid19api.com'
+        }
+    }
+
+    const successRequestStatus = [200, 201, 202, 203, 204]
+
+    async function fetchCovidData() {
+        const response = await fetch(covidStatisticsApi, requestBody)
+        const covidData = {...await response.json()}['Countries']
+        successRequestStatus.includes(response.status) && fillCountriesList(covidData);
+    }
+
+    function fillCountriesList(data) {
+        const countriesList = document.createElement('div')
+        countriesList.id = 'countries-list'
+        const listElements = []
+
+        data.forEach((element, index) => {
+            let htmlElement = document.createElement('div')
+            htmlElement.id = 'country-item'
+            htmlElement.innerText = element['Country']
+            htmlElement.onclick = () => countryOnClick(element)
+            listElements.push(htmlElement)
+            index || countryOnClick(element)
+        })
+
+        listElements.forEach(element => countriesList.appendChild(element))
+
+        const allCountries = document.createElement('marquee')
+        allCountries.id = 'all-countries'
+        allCountries.appendChild(countriesList)
+
+        document.querySelector('#navbar').appendChild(allCountries)
+
+        document.querySelector('#app-loader').style.display = 'none';
+        document.querySelector('#app').style.display = 'block';
+    }
+
+    function countryOnClick({
+                                TotalConfirmed: totalConfirmed,
+                                TotalDeaths: totalDeaths,
+                                TotalRecovered: totalRecovered,
+                                Country: country
+                            }) {
+
+        const statisticsCountry = document.querySelector('#statistics-name')
+        const statisticsTotalRecovered = document.querySelector('#statistics-total-recovered')
+        const statisticsTotalDeaths = document.querySelector('#statistics-total-deaths')
+        const statisticsTotalConfirmed = document.querySelector('#statistics-total-confirmed')
+
+        statisticsCountry.textContent = country.toString()
+        statisticsTotalRecovered.textContent = totalRecovered.toString()
+        statisticsTotalDeaths.textContent = totalDeaths.toString()
+        statisticsTotalConfirmed.textContent = totalConfirmed.toString()
+
+
+    }
+
+    fetchCovidData()
+
+</script>
+
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #app {
+        width: 100%;
+        height: 100%;
+        display:none;
+    }
+
+    #app-loader{
+        width: 100%;
+        height: 100%;
+        font-size: 24px;
+        font-weight: bold;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #all-countries {
+        height: 100px;
+    }
+
+    #countries-list {
+        height: 100px;
+        display: flex;
+    }
+
+    #country-item {
+        height: auto;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+
+    #statistics {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .statistics-element {
+        height: 50px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 25px;
+        margin-bottom: 25px;
+        background-color: #D9CFCD;
+    }
+
+    .statistics-element-end {
+        text-align: end;
+    }
+
+    .statistics-text {
+        width: 50%;
+    }
+</style>
