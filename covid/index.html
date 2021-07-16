@@ -1,49 +1,37 @@
 <html>
-
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
 <div id="app">
     <div id="navbar"></div>
-
     <div id="statistics">
-
         <div class="statistics-element">
             <div class="statistics-text">Covid statistics:</div>
         </div>
-
         <div class="statistics-element">
             <div class="statistics-text">Country:</div>
             <div class="statistics-text statistics-element-end" id="statistics-name"></div>
         </div>
-
         <div class="statistics-element">
             <div class="statistics-text">Total recovered:</div>
             <div class="statistics-text statistics-element-end" id="statistics-total-recovered"></div>
         </div>
-
         <div class="statistics-element">
             <div class="statistics-text">Total deaths:</div>
             <div class="statistics-text statistics-element-end" id="statistics-total-deaths"></div>
         </div>
-
         <div class="statistics-element">
             <div class="statistics-text">Total confirmed:</div>
             <div class="statistics-text statistics-element-end" id="statistics-total-confirmed"></div>
         </div>
-
     </div>
 </div>
-
 <div id="app-loader">Fetching data...</div>
-
+<div id="error">Error with request!</div>
 </body>
-
 </html>
 
 <script>
@@ -59,30 +47,40 @@
         }
     }
     const defaultCountry = 'Poland'
-
     const successRequestStatus = [200, 201, 202, 203, 204]
 
     async function fetchCovidData() {
         const response = await fetch(covidStatisticsApi, requestBody)
         const covidData = {...await response.json()}['Countries']
-        successRequestStatus.includes(response.status) && fillCountriesList(covidData);
+
+        if (successRequestStatus.includes(response.status)) {
+            fillCountriesList(covidData)
+        } else {
+            updateElementDisplayValue('app-loader', 'none')
+            updateElementDisplayValue('error', 'block')
+        }
     }
 
     function fillCountriesList(data) {
-        const countriesList = createHtmlElement('div','countries-list')
+        const countriesList = createHtmlElement('div', 'countries-list')
         const listElements = []
 
         data.forEach((element, index) => {
-            let htmlElement = createHtmlElement('div','country-item')
-            htmlElement.innerText = element['Country']
-            htmlElement.onclick = () => countryOnClick(element)
+            const countryKey = 'Country'
+            const htmlElement = createHtmlElement('div', 'country-item')
+
+            htmlElement.innerText = element[countryKey]
+            htmlElement.onclick = function () {
+                countryOnClick(element)
+            }
+
             listElements.push(htmlElement)
-            index || countryOnClick(data.find(element => element['Country'] === defaultCountry))
+            index === 0 || countryOnClick(data.find(element => element[countryKey] === defaultCountry))
         })
 
         listElements.forEach(element => countriesList.appendChild(element))
 
-        const allCountries = createHtmlElement('marquee','all-countries')
+        const allCountries = createHtmlElement('marquee', 'all-countries')
         allCountries.appendChild(countriesList)
 
         document.querySelector('#navbar').appendChild(allCountries)
@@ -97,20 +95,20 @@
                                 TotalRecovered: totalRecovered,
                                 Country: country
                             }) {
-        updateCovidElement('statistics-name', country)
-        updateCovidElement('statistics-total-recovered', totalRecovered)
-        updateCovidElement('statistics-total-deaths', totalDeaths)
-        updateCovidElement('statistics-total-confirmed', totalConfirmed)
+        updateElementTextContent('statistics-name', country)
+        updateElementTextContent('statistics-total-recovered', totalRecovered)
+        updateElementTextContent('statistics-total-deaths', totalDeaths)
+        updateElementTextContent('statistics-total-confirmed', totalConfirmed)
     }
 
     function createHtmlElement(tag, id) {
-        let element = document.createElement(tag)
+        const element = document.createElement(tag)
         element.id = id
 
         return element
     }
 
-    function updateCovidElement(idName, value) {
+    function updateElementTextContent(idName, value) {
         document.querySelector(`#${idName}`).textContent = value.toString()
     }
 
@@ -128,21 +126,27 @@
     }
 
     #app {
-        width: 100%;
         height: 100%;
         display: none;
     }
 
     #app-loader {
-        width: 100%;
         height: 100%;
-        font-size: 24px;
+        font-size: 30px;
         font-weight: bold;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+    #error {
+        display: none;
+        padding: 25px;
+        background-color: #FD9C8E;
+        border: 3px solid #FC604A;
+        text-align: center;
+        font-size: 30px;
+    }
 
     #all-countries {
         height: 100px;
@@ -162,24 +166,35 @@
         cursor: pointer;
     }
 
+    #country-item:hover {
+        text-decoration: underline;
+    }
+
     #statistics {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 100%;
     }
 
     .statistics-element {
-        height: 50px;
+        min-height: 50px;
         width: 50%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 25px;
+        padding: 5px 25px;
         font-size: 24px;
         margin-bottom: 25px;
         background-color: #D9CFCD;
+    }
+
+    .statistics-element-end {
+        text-align: end;
+    }
+
+    .statistics-text {
+        width: 50%;
     }
 
     @media (max-width: 900px) {
@@ -190,13 +205,5 @@
         #all-countries {
             font-size: 28px;
         }
-    }
-
-    .statistics-element-end {
-        text-align: end;
-    }
-
-    .statistics-text {
-        width: 50%;
     }
 </style>
