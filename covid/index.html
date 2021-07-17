@@ -30,93 +30,78 @@
     </div>
 </div>
 <div id="app-loader">Fetching data...</div>
-<div id="error">Error with request!</div>
+<div id="error">Error on api source!</div>
 </body>
 </html>
 
+<script src="macros.js"></script>
+
 <script>
-    const covidStatisticsApi = 'https://api.covid19api.com/summary'
-    const requestBody = {
-        method: 'GET',
-        mode: 'cors',
-        cache: 'no-cache',
-        credentials: 'same-origin',
-        headers: {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': 'https://api.covid19api.com'
+    const fetchCovidData = async (useTestData = false) => {
+        const response = useTestData ? testApiData : await fetch(covidStatisticsApi, requestBody)
+
+        const {Countries} = useTestData ? response : {
+            ...await response.json()
         }
-    }
-    const defaultCountry = 'Poland'
-    const successRequestStatus = [200, 201, 202, 203, 204]
 
-    async function fetchCovidData() {
-        const response = await fetch(covidStatisticsApi, requestBody)
-        const covidData = {...await response.json()}['Countries']
-
-        if (successRequestStatus.includes(response.status)) {
-            fillCountriesList(covidData)
+        if (successStat.includes(response.status) && Countries) {
+            fillCountriesList(Countries)
         } else {
-            updateElementDisplayValue('app-loader', 'none')
-            updateElementDisplayValue('error', 'block')
+            updateElementDisplayValue(appLoaderHtml, noneElementHtml)
+            updateElementDisplayValue(errorElementHtml, blockElementHtml)
         }
     }
 
-    function fillCountriesList(data) {
-        const countriesList = createHtmlElement('div', 'countries-list')
+    const fillCountriesList = data => {
+        const countriesList = createHtmlElement(mainElementHtml, countriesListHtml)
         const listElements = []
 
         data.forEach((element, index) => {
-            const countryKey = 'Country'
-            const htmlElement = createHtmlElement('div', 'country-item')
-
+            const htmlElement = createHtmlElement(mainElementHtml, countryItemHtml)
             htmlElement.innerText = element[countryKey]
-            htmlElement.onclick = function () {
+            htmlElement.onclick = () => {
                 countryOnClick(element)
             }
 
             listElements.push(htmlElement)
-            index === 0 || countryOnClick(data.find(element => element[countryKey] === defaultCountry))
+            index === 0 && countryOnClick(data.find(element => element[countryKey] === defaultCountry))
         })
 
         listElements.forEach(element => countriesList.appendChild(element))
 
-        const allCountries = createHtmlElement('marquee', 'all-countries')
+        const allCountries = createHtmlElement(sliderElementHtml, allCountriesHtml)
         allCountries.appendChild(countriesList)
 
         document.querySelector('#navbar').appendChild(allCountries)
 
-        updateElementDisplayValue('app-loader', 'none')
-        updateElementDisplayValue('app', 'block')
+        updateElementDisplayValue(appLoaderHtml, noneElementHtml)
+        updateElementDisplayValue(mainWrapperHtml, blockElementHtml)
     }
 
-    function countryOnClick({
-                                TotalConfirmed: totalConfirmed,
-                                TotalDeaths: totalDeaths,
-                                TotalRecovered: totalRecovered,
-                                Country: country
-                            }) {
-        updateElementTextContent('statistics-name', country)
-        updateElementTextContent('statistics-total-recovered', totalRecovered)
-        updateElementTextContent('statistics-total-deaths', totalDeaths)
-        updateElementTextContent('statistics-total-confirmed', totalConfirmed)
+    const countryOnClick = ({TotalConfirmed, TotalDeaths, TotalRecovered, Country}) => {
+        const {name, recovered, deaths, confirmed} = statisticsHtml
+        const values = {
+            [name]: Country,
+            [recovered]: TotalRecovered,
+            [deaths]: TotalDeaths,
+            [confirmed]: TotalConfirmed,
+        }
+
+        Object.keys(values).forEach(element => {
+            updateElementTextContent(element, values[element])
+        })
     }
 
-    function createHtmlElement(tag, id) {
+    const createHtmlElement = (tag, id) => {
         const element = document.createElement(tag)
         element.id = id
-
         return element
     }
 
-    function updateElementTextContent(idName, value) {
-        document.querySelector(`#${idName}`).textContent = value.toString()
-    }
+    const updateElementTextContent = (idName, value) => document.querySelector(idName).textContent = value.toString()
+    const updateElementDisplayValue = (idName, value) => document.querySelector(idName).style.display = value;
 
-    function updateElementDisplayValue(idName, value) {
-        document.querySelector(`#${idName}`).style.display = value;
-    }
-
-    fetchCovidData()
+    fetchCovidData(location.search === testMode)
 
 </script>
 
